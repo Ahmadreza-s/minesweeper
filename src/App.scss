@@ -1,0 +1,49 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Nika';
+  src: url('https://cdn.font-store.ir/fonts/nika/Nika-Regular.woff2') format('woff2'),
+  url('https://cdn.font-store.ir/fonts/nika/Nika-Regular.woff') format('woff'),
+  url('https://cdn.font-store.ir/fonts/nika/Nika-Regular.ttf') format('truetype'),
+  url('https://cdn.font-store.ir/fonts/nika/Nika-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 20px;
+  padding: 0;
+  font-family: sans-serif;
+  background: #f4f4f4;
+}
+
+.refreshBtn {
+  background: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 40px;
+  padding-top: 15px;
+  margin: auto;
+  display: flex;
+  cursor: pointer;
+
+}
+
+.refreshBtn:hover, .refreshBtn:active {
+  animation: spin .5s linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+
+}
